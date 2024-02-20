@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exemplo Spring Boot com Thymeleaf</title>
+    <style>
+        table {
+            font-family: arial, sans-serif;
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        td,
+        th {
+            border: 2px solid #000000;
+            text-align: left;
+            padding: 8px;
+        }
+
+        tr:nth-child(even) {
+            background-color: #dddddd;
+        }
+
+        .descriptor {
+            background-color: #bfbfbf;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Teste Caractere UTF-8 áàãâõ ÁÀÃÂÕ<span th:text="${nomeDoAtributo}"></span></h1>
+    <div style="width: 100%; border: 2px solid #1a9b9f; ">
+        <table>
+            <tr>
+                <td><span>*TEST imagens*</span></td>
+                <td class="right"><img th:src="@{meme.jpg}"/></td>
+            </tr>
+            <tr>
+                <td><span>*TEST imagens*</span></td>
+                <td class="right"><img th:src="@{meme.jpg}"/></td>
+            </tr>
+            <tr>
+                <td><span>*TEST imagens*</span></td>
+                <td class="right"><img th:src="@{meme.jpg}"/></td>
+            </tr>
+            <tr>
+                <td><span>*TEST imagens*</span></td>
+                <td class="right"><img th:src="@{meme.jpg}"/></td>
+            </tr>
+            <tr>
+                <td><span>*TEST imagens*</span></td>
+                <td class="right"><img th:src="@{meme.jpg}"/></td>
+            </tr>
+            <tr>
+                <td><span>*TEST imagens*</span></td>
+                <td class="right"><img th:src="@{meme.jpg}"/></td>
+            </tr>
+            <tr>
+                <td><span>*TEST imagens*</span></td>
+                <td class="right"><img th:src="@{meme.jpg}"/></td>
+            </tr>
+            <tr>
+                <td><span>*TEST imagens*</span></td>
+                <td class="right"><img th:src="@{meme.jpg}"/></td>
+            </tr>
+            <tr>
+                <td><span>*TEST imagens*</span></td>
+                <td class="right"><img th:src="@{meme.jpg}"/></td>
+            </tr>
+            <tr>
+                <td><span>*TEST imagens*</span></td>
+                <td class="right"><img th:src="@{meme.jpg}"/></td>
+            </tr>
+            <tr>
+                <td><span>*TEST imagens*</span></td>
+                <td class="right"><img th:src="@{meme.jpg}"/></td>
+            </tr>
+            <tr>
+                <td><span>*TEST imagens*</span></td>
+                <td class="right"><img th:src="@{meme.jpg}"/></td>
+            </tr>
+            <tr>
+                <td><span>*TEST imagens*</span></td>
+                <td class="right"><img th:src="@{meme.jpg}"/></td>
+            </tr>
+            <tr>
+                <td><span>*TEST imagens*</span></td>
+                <td class="right"><img th:src="@{meme.jpg}"/></td>
+            </tr>
+        </table>
+        <tr th:each="student: ${students}">
+            <td th:text="${student.id}"/>
+            <td th:text="${student.name}"/>
+        </tr>
+    </div>
+    <table>
+        <tr>
+            <td class="descriptor">Projeto/area/subarea</td>
+            <td th:text="${areaValor}"></td>
+
+        </tr>
+        <tr>
+            <td class="descriptor">Projeto/area/subarea</td>
+            <td th:text="${areaValor}"></td>
+
+        </tr>
+        <tr>
+            <td class="descriptor">Projeto/area/subarea</td>
+            <td th:text="${areaValor}"></td>
+
+        </tr>
+        <tr>
+            <td class="descriptor">Projeto/area/subarea</td>
+            <td th:text="${areaValor}"></td>
+
+        </tr>
+    </table>
+</body>
+
+</html>
